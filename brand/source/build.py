@@ -244,11 +244,6 @@ def build_avatar():
 
 SOCIAL = {
     "org": ("ptrnformat", "An open file format for stitched-craft patterns"),
-    "spec": ("ptrnformat/spec", "The .ptrn specification, schemas and stitch registry"),
-    "ptrn-js": ("ptrnformat/ptrn-js", "JavaScript library for reading and writing .ptrn files"),
-    "website": ("ptrnformat/website", "Source for ptrnformat.org"),
-    "community": ("ptrnformat/community", "Governance, brand and working group resources"),
-    "dot-github": ("ptrnformat/.github", "Default community health files"),
 }
 
 

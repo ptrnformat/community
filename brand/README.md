@@ -37,7 +37,7 @@ White on slate is 5.6:1. Slate is 5.6:1 on white and 3.4:1 against GitHub's dark
 | 24px and below (favicons, tabs, small avatars) | `icon/svg/ptrn-icon.svg` |
 | `.ptrn` file type in apps and operating systems | `icon/svg/ptrn-file-icon.svg` |
 | GitHub org avatar | `avatar/ptrn-avatar.png` (500 × 500) |
-| GitHub repo social previews | `social/ptrn-social-*.png` (1280 × 640) |
+| GitHub repo social previews | `social/ptrn-social-org.png` (1280 × 640) |
 | Website favicons | `favicon/` (see below) |
 
 Every logo works on light and dark backgrounds, so there is one file per logo.
@@ -67,7 +67,7 @@ PNG versions are in each `png/` folder: marks and icons at 256, 512 and 1024px; 
 ## GitHub setup
 
 - **Org avatar:** upload `avatar/ptrn-avatar.png` in the organization's settings.
-- **Social previews:** GitHub sets these per repository, not from a file. In each repo's Settings → General → Social preview, upload the matching `social/ptrn-social-<repo>.png` (`dot-github` is for the `.github` repo, `org` is a generic version).
+- **Social previews:** GitHub sets these per repository, not from a file. Upload `social/ptrn-social-org.png` in each repo's Settings → General → Social preview.
 
 ## Regenerating
 
