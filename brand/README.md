@@ -16,14 +16,17 @@ Logos, icons, colors and usage guidelines for the PTRN Working Group and the `.p
 | Token | Light mode | Dark mode | Use |
 | --- | --- | --- | --- |
 | `slate` | `#536A7F` | `#536A7F` | The logo tile and wordmark. The brand color. |
-| `accent` | `#2563EB` | `#6EA8FF` | Links, buttons, focus outlines, active states. Never in the logo. |
+| `accent` | `#49689C` | `#9CB2DE` | Links, buttons, focus outlines, active states. Never in the logo. |
 | `on-accent` | `#FFFFFF` | `#121212` | Text on an accent fill |
 | `ink` | `#1C1C1C` | `#EDEDED` | Body text |
 | `ink-muted` | `#5E5E5E` | `#A3A3A3` | Secondary text |
 | `surface` | `#FFFFFF` | `#121212` | Page background |
+| `surface-muted` | `#F3F4F6` | `#1A1A1A` | Alternate section background and inactive cards |
 | `hairline` | `#D4D4D4` | `#333333` | Dividers and rules |
 
-White on slate is 5.6:1. Slate is 5.6:1 on white and 3.4:1 against GitHub's dark theme, so the tile and wordmark stay legible on both. The accent meets 4.5:1 for text in both modes.
+White on slate is 5.6:1. Slate is 5.6:1 on white and 3.4:1 against GitHub's dark theme, so the tile and wordmark stay legible on both. The accent is a muted mid-blue, chosen so it sits next to slate without competing with it. It is 5.6:1 on white, 5.1:1 on the light gray section background (`#F3F4F6`) and 8.8:1 in dark mode, so it meets 4.5:1 for text everywhere.
+
+Links are underlined, except in site navigation. Outline buttons use a 2px accent border with accent text.
 
 ## Which file to use
 
