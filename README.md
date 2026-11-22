@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ptrnformat/community/main/brand/logo/svg/ptrn-wg-horizontal-on-dark.svg">
-    <img alt="PTRN Working Group" src="https://raw.githubusercontent.com/ptrnformat/community/main/brand/logo/svg/ptrn-wg-horizontal-on-light.svg" height="96">
-  </picture>
+  <img alt="PTRN Working Group" src="https://raw.githubusercontent.com/ptrnformat/community/main/brand/logo/svg/ptrn-wg-horizontal.svg" height="96">
 </p>
 
 <p align="center">An open, community-owned file format for stitched-craft patterns.</p>
