@@ -1,34 +1,35 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="brand/logo/svg/ptrn-wg-horizontal-on-dark.svg">
-    <img alt="PTRN Working Group" src="brand/logo/svg/ptrn-wg-horizontal-on-light.svg" height="96">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ptrnformat/community/main/brand/logo/svg/ptrn-wg-horizontal-on-dark.svg">
+    <img alt="PTRN Working Group" src="https://raw.githubusercontent.com/ptrnformat/community/main/brand/logo/svg/ptrn-wg-horizontal-on-light.svg" height="96">
   </picture>
 </p>
 
-# PTRN Working Group: community
+<p align="center">An open, community-owned file format for stitched-craft patterns.</p>
 
-The home of the PTRN Working Group: how it is organized, how decisions are made, and the PTRN brand.
+---
 
-## What's here
+PTRN (`.ptrn`) is an open file format for crochet, knitting, cross-stitch and embroidery patterns. It is an alternative to PDFs and closed, platform-specific formats: one file that any reader, writer or shop can open.
 
-| Folder | What it holds |
+The format uses Craft Yarn Council standard stitch symbols and abbreviations, a shared stitch registry, and custom stitches embedded right in the file.
+
+## Repositories
+
+| Repo | What it holds |
 | --- | --- |
-| [`brand/`](brand/) | Logos, icons, colors and usage guidelines |
+| [`spec`](https://github.com/ptrnformat/spec) | The `.ptrn` specification, schemas and stitch registry |
+| [`ptrn-js`](https://github.com/ptrnformat/ptrn-js) | JavaScript library for reading and writing `.ptrn` files |
+| [`website`](https://github.com/ptrnformat/website) | Source for [ptrnformat.org](https://ptrnformat.org) |
+| [`community`](https://github.com/ptrnformat/community) | Governance and brand |
+| [`.github`](https://github.com/ptrnformat/.github) | Default community health files |
 
-## Coming soon
+## Licensing
 
-- **Charter:** what the working group is for and what it covers
-- **Governance:** roles, decision-making and how to become a maintainer
-- **Meetings:** schedule and notes
-- **Trademark policy:** how others may use the PTRN name and marks
+- Spec text and governance docs: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Schemas, stitch registry and conformance corpus: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- Code: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- The PTRN name and logos: see [brand/LICENSE.md](https://github.com/ptrnformat/community/blob/main/brand/LICENSE.md)
 
-## Related
+## Contact
 
-- Default community health files (code of conduct, contributing, security) live in [`.github`](https://github.com/ptrnformat/.github).
-- The format itself lives in [`spec`](https://github.com/ptrnformat/spec).
-
-## License
-
-Documents in this repository are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), except the PTRN name and marks in `brand/`, which are covered by [brand/LICENSE.md](brand/LICENSE.md).
-
-Contact: [hello@ptrnformat.org](mailto:hello@ptrnformat.org)
+[hello@ptrnformat.org](mailto:hello@ptrnformat.org) · Security: [security@ptrnformat.org](mailto:security@ptrnformat.org) · Conduct: [conduct@ptrnformat.org](mailto:conduct@ptrnformat.org)
