@@ -2,31 +2,42 @@
   <img alt="PTRN Working Group" src="https://raw.githubusercontent.com/ptrnformat/community/main/brand/logo/svg/ptrn-wg-horizontal.svg" height="96">
 </p>
 
-<p align="center">An open, community-owned file format for stitched-craft patterns.</p>
+# PTRN brand assets
 
----
+The official logos and icons for the PTRN Working Group and the `.ptrn` pattern file format. Use them when you write about PTRN, link to it, or list it as a file type your app or shop supports.
 
-PTRN (`.ptrn`) is an open file format for crochet, knitting, cross-stitch and embroidery patterns. It is an alternative to PDFs and closed, platform-specific formats: one file that any reader, writer or shop can open.
+New to PTRN? Start at [ptrnformat.org](https://ptrnformat.org).
 
-The format uses Craft Yarn Council standard stitch symbols and abbreviations, a shared stitch registry, and custom stitches embedded right in the file.
+## The files you're most likely to need
 
-## Repositories
-
-| Repo | What it holds |
+| You want to… | Use this |
 | --- | --- |
-| [`spec`](https://github.com/ptrnformat/spec) | The `.ptrn` specification, schemas and stitch registry |
-| [`ptrn-js`](https://github.com/ptrnformat/ptrn-js) | JavaScript library for reading and writing `.ptrn` files |
-| [`website`](https://github.com/ptrnformat/website) | Source for [ptrnformat.org](https://ptrnformat.org) |
-| [`community`](https://github.com/ptrnformat/community) | Governance and brand |
-| [`.github`](https://github.com/ptrnformat/.github) | Default community health files |
+| Mention the `.ptrn` format in an article, a talk or on a website | [PTRN logo](brand/logo/png/ptrn-lockup-horizontal-480h.png) |
+| Refer to the Working Group itself | [PTRN Working Group logo](brand/logo/png/ptrn-wg-horizontal-480h.png) |
+| Show `.ptrn` in a list of supported file types | [`.ptrn` file icon](brand/icon/png/ptrn-file-icon-512.png) |
+| A small square icon (social media, tight spaces) | [PTRN icon](brand/icon/png/ptrn-icon-512.png) |
 
-## Licensing
+Every logo works on both light and dark backgrounds, so you only need one version of each. To download a file, open it and click the download button at the top right.
 
-- Spec text and governance docs: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-- Schemas, stitch registry and conformance corpus: [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
-- Code: [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-- The PTRN name and logos: see [brand/LICENSE.md](https://github.com/ptrnformat/community/blob/main/brand/LICENSE.md)
+Need a different size, a vector (SVG) file, or a one-color version for engraving, stamps or embroidery? Everything is in the [`brand`](brand) folder.
 
-## Contact
+## How you can use them
 
-[hello@ptrnformat.org](mailto:hello@ptrnformat.org) · Security: [security@ptrnformat.org](mailto:security@ptrnformat.org) · Conduct: [conduct@ptrnformat.org](mailto:conduct@ptrnformat.org)
+You're welcome to use the logos and icons, unchanged, to refer to PTRN, the PTRN Working Group or the `.ptrn` format.
+
+Please ask first before you:
+
+- put the PTRN name or logo on a product, website, app, merchandise or packaging
+- suggest that your software supports, or is certified for, `.ptrn`
+
+And please don't change the logos or combine them with your own.
+
+The full terms are in [brand/LICENSE.md](brand/LICENSE.md). A formal trademark policy is in preparation.
+
+## Questions and permission requests
+
+Email [hello@ptrnformat.org](mailto:hello@ptrnformat.org).
+
+## For designers and developers
+
+Colors, clear-space rules, favicon setup and how the assets are generated are all in the [brand guidelines](brand/README.md).
