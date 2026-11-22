@@ -2,49 +2,47 @@
 
 Logos, icons, colors and usage guidelines for the PTRN Working Group and the `.ptrn` file format.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="logo/svg/ptrn-lockup-horizontal-on-dark.svg">
-  <img alt="PTRN" src="logo/svg/ptrn-lockup-horizontal-on-light.svg" height="72">
-</picture>
+<img alt="PTRN" src="logo/svg/ptrn-lockup-horizontal.svg" height="72">
 
 ## The identity
 
 - **Tone:** a standards body. Calm, neutral and independent of any product or company.
 - **The mark:** the letters P T / R N in a 2×2 grid on a slate tile. The cells form a checkerboard: P and N are solid white with the letter cut out; T and R are white outlines with a white letter. The checkerboard nods to the charts used across every stitched craft without picturing any one of them.
 - **Letters:** custom slab letterforms adapted from Arvo Bold. The bowls of the P and R are rounded rectangles that echo the grid cells, the R has a straight leg, and every serif projects the same distance. Secondary text ("Working Group", `.ptrn`) is Arvo Regular. All letters in the asset files are outlines, so no font needs to be installed.
-- **One mark for every background:** the slate tile carries its own background, so the same mark works on light and dark pages. Only the wordmark next to it changes color.
+- **One logo for every background:** the slate tile carries its own background and the wordmark is slate too, so every logo is a single file that works on light and dark pages. There are no light or dark versions.
 
 ## Color
 
 | Token | Light mode | Dark mode | Use |
 | --- | --- | --- | --- |
-| `slate` | `#536A7F` | `#536A7F` | The logo tile. The brand color. |
+| `slate` | `#536A7F` | `#536A7F` | The logo tile and wordmark. The brand color. |
 | `accent` | `#2563EB` | `#6EA8FF` | Links, buttons, focus outlines, active states. Never in the logo. |
 | `on-accent` | `#FFFFFF` | `#121212` | Text on an accent fill |
-| `ink` | `#1C1C1C` | `#EDEDED` | Body text and the wordmark |
+| `ink` | `#1C1C1C` | `#EDEDED` | Body text |
 | `ink-muted` | `#5E5E5E` | `#A3A3A3` | Secondary text |
 | `surface` | `#FFFFFF` | `#121212` | Page background |
 | `hairline` | `#D4D4D4` | `#333333` | Dividers and rules |
 
-White on slate is 5.6:1. Slate stays visible on dark backgrounds (3.4:1 against GitHub's dark theme). The accent meets 4.5:1 for text in both modes.
+White on slate is 5.6:1. Slate is 5.6:1 on white and 3.4:1 against GitHub's dark theme, so the tile and wordmark stay legible on both. The accent meets 4.5:1 for text in both modes.
 
 ## Which file to use
 
 | Need | File |
 | --- | --- |
-| Introducing the format (site header, README, slides) | `logo/svg/ptrn-lockup-horizontal-on-light.svg` / `-on-dark.svg` |
-| Introducing the organization | `logo/svg/ptrn-wg-horizontal-on-light.svg` / `-on-dark.svg` |
-| Narrow or square spaces | `logo/svg/ptrn-lockup-stacked-*`, `logo/svg/ptrn-wg-stacked-*` |
-| The mark alone (32px and up) | `logo/svg/ptrn-mark.svg` (one file for all backgrounds) |
-| The name alone | `logo/svg/ptrn-wordmark-on-light.svg` / `-on-dark.svg` |
+| Introducing the format (site header, README, slides) | `logo/svg/ptrn-lockup-horizontal.svg` |
+| Introducing the organization | `logo/svg/ptrn-wg-horizontal.svg` |
+| Narrow or square spaces | `logo/svg/ptrn-lockup-stacked.svg`, `logo/svg/ptrn-wg-stacked.svg` |
+| The mark alone (32px and up) | `logo/svg/ptrn-mark.svg` |
+| The name alone | `logo/svg/ptrn-wordmark.svg` |
 | 24px and below (favicons, tabs, small avatars) | `icon/svg/ptrn-icon.svg` |
 | `.ptrn` file type in apps and operating systems | `icon/svg/ptrn-file-icon.svg` |
-| One-color production (engraving, stamps, embroidery, single-ink print) | `logo/one-color/svg/` (black and white) |
 | GitHub org avatar | `avatar/ptrn-avatar.png` (500 × 500) |
-| GitHub repo social previews | `social/ptrn-social-*.png` (1280 × 640) |
+| GitHub repo social previews | `social/ptrn-social-org.png` (1280 × 640) |
 | Website favicons | `favicon/` (see below) |
 
-**Only one image allowed?** Use `ptrn-mark.svg`, or a lockup whose wordmark matches the background. If you don't know the background, use the mark alone.
+Every logo works on light and dark backgrounds, so there is one file per logo.
+
+**Production files:** `production/` has pure black and pure white outline versions (no tile) for physical production that allows only one color, such as laser engraving, rubber stamps, single-thread embroidery and one-ink print. Don't use them on screens.
 
 PNG versions are in each `png/` folder: marks and icons at 256, 512 and 1024px; lockups and wordmarks at 240 and 480px tall. Backgrounds are transparent except the avatar, touch icons and social previews.
 
@@ -69,7 +67,7 @@ PNG versions are in each `png/` folder: marks and icons at 256, 512 and 1024px; 
 ## GitHub setup
 
 - **Org avatar:** upload `avatar/ptrn-avatar.png` in the organization's settings.
-- **Social previews:** GitHub sets these per repository, not from a file. In each repo's Settings → General → Social preview, upload the matching `social/ptrn-social-<repo>.png` (`dot-github` is for the `.github` repo, `org` is a generic version).
+- **Social previews:** GitHub sets these per repository, not from a file. Upload `social/ptrn-social-org.png` in each repo's Settings → General → Social preview.
 
 ## Regenerating
 

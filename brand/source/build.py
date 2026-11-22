@@ -22,9 +22,9 @@ RGS = REG.getGlyphSet()
 RCM = REG.getBestCmap()
 RCAP = 1516  # Arvo cap height in font units
 
-SLATE = "#536A7F"     # brand color: the logo tile
-INK = "#1C1C1C"       # text on light backgrounds
-PAPER = "#FFFFFF"     # text on dark backgrounds, and the mark's contents
+SLATE = "#536A7F"     # brand color: the logo tile and the wordmark
+INK = "#1C1C1C"       # body text on social previews
+PAPER = "#FFFFFF"     # the mark's contents
 MUTED = "#5E5E5E"
 
 
@@ -175,14 +175,13 @@ def file_icon():
 def build_logos():
     made = []  # (svg path, png kind)
     L_DIR = f"{OUT}/brand/logo/svg"
-    O_DIR = f"{OUT}/brand/logo/one-color/svg"
+    O_DIR = f"{OUT}/brand/production/svg"
     I_DIR = f"{OUT}/brand/icon/svg"
 
     write(f"{L_DIR}/ptrn-mark.svg", svg(120, 120, mark_tile(), "PTRN")); made.append((f"{L_DIR}/ptrn-mark.svg", "square"))
-    for bg, color in (("on-light", INK), ("on-dark", PAPER)):
-        for kind, content in lockups(lambda x, y: mark_tile(x, y), color).items():
-            p = f"{L_DIR}/ptrn-{kind}-{bg}.svg"
-            write(p, content); made.append((p, "wide"))
+    for kind, content in lockups(lambda x, y: mark_tile(x, y), SLATE).items():
+        p = f"{L_DIR}/ptrn-{kind}.svg"
+        write(p, content); made.append((p, "wide"))
 
     for name, c in (("black", "#000000"), ("white", "#FFFFFF")):
         p = f"{O_DIR}/ptrn-mark-{name}.svg"
@@ -245,11 +244,6 @@ def build_avatar():
 
 SOCIAL = {
     "org": ("ptrnformat", "An open file format for stitched-craft patterns"),
-    "spec": ("ptrnformat/spec", "The .ptrn specification, schemas and stitch registry"),
-    "ptrn-js": ("ptrnformat/ptrn-js", "JavaScript library for reading and writing .ptrn files"),
-    "website": ("ptrnformat/website", "Source for ptrnformat.org"),
-    "community": ("ptrnformat/community", "Governance, brand and working group resources"),
-    "dot-github": ("ptrnformat/.github", "Default community health files"),
 }
 
 
@@ -261,7 +255,7 @@ def build_social():
         x0 = (W - (148 + lw) * s) / 2
         y0 = 150
         d, _ = wordmark(x0 + 148 * s, y0 + 82 * s, WM_CAP * s)
-        body = mark_tile(x0, y0, s) + f'<path fill="{INK}" d="{d}"/>'
+        body = mark_tile(x0, y0, s) + f'<path fill="{SLATE}" d="{d}"/>'
         tw = text_reg_width(title, 34)
         td, _ = text_reg(title, (W - tw) / 2, 470, 34)
         dw = text_reg_width(desc, 22)
